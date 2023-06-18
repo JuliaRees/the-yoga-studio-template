@@ -12,9 +12,11 @@
         @apply border-8 sm:border-blue md:border-purple lg:border-teal;
     }
 
+    /*
     div, nav, header, section {
         border: 1px solid white;
     }
+    */
 
     body {
         @apply text-copper bg-light; 
@@ -28,7 +30,7 @@
         @apply text-3xl leading-tight;
     }
     h2 {
-        @apply text-2xl leading-tight;
+        @apply text-3xl tracking-tight;
     }
     h3 {
         @apply text-xl leading-tight;
@@ -63,7 +65,7 @@
     }
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+        @apply inline-block px-4 py-2 uppercase tracking-wide bg-copper text-light ;
     }
     
 }

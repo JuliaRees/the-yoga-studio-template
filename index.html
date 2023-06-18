@@ -13,5 +13,48 @@ seo:
   hide-from-google: false
 ---
 
-<!--------Header Banner----------->
 
+<!---------2-column section--------------->
+
+<section>
+  <div class="md:grid grid-cols-2 min-h-60">
+      <div class="p-[5vw] self-end">
+
+          <h2> Duis Arte Irure </h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil. </p>
+          <a href="/schedule" class="button mt-2"> Sign up </a>
+
+      </div>
+
+      <div class="bg-center bg-cover aspect-square md:aspect-auto pb-[75%] m-[5vw] md:m-0 md:border-l-2"
+      style="background-image: url('/images/yoga-studio-2.jpg')">
+      </div>
+  </div>
+</section>
+
+
+<!---------Classes section--------------->
+
+<section>
+  <div class="grid grid-cols-2 border-y-2">
+
+    <div class="bg-center bg-cover aspect-square border-r-2" style="background-image: url('/images/yoga-studio-3.jpg')">
+
+      <h2 class="text-light"> Our Classes </h2>
+      <p class="text-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil. </p>
+      <a href="#" class="button"> Find out more </a>
+
+    </div>
+
+    <div class="grid grid-cols-2 bg-copper gap-[1px]">
+
+      {% for class in site.classes limit:4 %}
+  
+        {% include class-loop.html %}
+          
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>

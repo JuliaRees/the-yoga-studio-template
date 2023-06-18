@@ -19,19 +19,19 @@
     <nav class="py-4 md:p-0">
         <a href="/classes"> Our Classes </a>
         <a href="/schedule"> Schedule </a>
-        <a href="/contact"> Contact </a>
+        <a href="/contact" class="pr-0"> Contact </a>
     </nav>
 </header>
 
-<section class="bg-center bg-cover max-w-screen-3xl mx-auto px-5p"
+<section class="bg-center bg-cover max-w-screen-3xl mx-auto px-5p border-b-2"
     style="background-image: url('{{page.banner-image}}')">
 
     <div class="flex items-center min-h-90">
         <div>
-            <hr class="border-b-0 mb-4 -ml-[5vw] w-[60%]">
+            <hr class="border-2 border-b-0 mb-4 -ml-[5vw] w-[60%]">
 
             {% if page.pre-heading %}
-            <h2 class="text-sm uppercase tracking-wide font-sans"> {{page.pre-heading}} </h2>
+            <h2 class="text-base uppercase tracking-wide font-sans"> {{page.pre-heading}} </h2>
             {% endif %}
 
             <h1 class="mb-0 text-6xl"> {{ page.heading }} </h1>
@@ -42,6 +42,20 @@
 </section>
 
   
+
+{{ content }}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
