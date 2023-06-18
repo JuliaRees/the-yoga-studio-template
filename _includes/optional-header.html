@@ -1,0 +1,29 @@
+<!---------Header Banner--------------->
+
+<header class="bg-center bg-cover max-w-screen-3xl mx-auto px-5p relative"
+    style="background-image: url('{{page.banner-image}}')">
+
+    <div class="absolute top-0 left-0 right-0 md:flex justify-between py-8 px-5p">
+        <h2 class="mb-0 text-l">
+            <a href="/"> The Yoga Studio </a>
+        </h2>
+        <nav class="py-4 md:p-0">
+            <a href="/classes"> Our Classes </a>
+            <a href="/schedule"> Schedule </a>
+            <a href="/contact"> Contact </a>
+        </nav>
+    </div>
+
+    <div class="flex items-center min-h-90">
+        <div>
+
+            {% if page.pre-heading %}
+            <h2 class="text-sm uppercase tracking-wide font-sans"> {{page.pre-heading}} </h2>
+            {% endif %}
+
+            <h1 class="mb-0 text-6xl"> {{ page.heading }} </h1>
+
+        </div>
+    </div>
+
+</header>
