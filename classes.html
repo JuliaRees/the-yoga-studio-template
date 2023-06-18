@@ -1,0 +1,49 @@
+---
+layout: default
+title: Classes
+banner-image: /images/yoga-studio-3.jpg
+pre-heading: 
+heading: Our Classes
+indented-banner: true
+background-position: bg-[position:50%_16%]
+seo:
+  title: 
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+
+<!---------Classes section--------------->
+
+<section class="p-[5vw]">
+
+    <div class="max-w-screen-lg mx-auto">
+            
+        
+            <!-------First line is the mobile styles, second line is the desktop style------>
+            <div class="px-5p overflow-x-scroll flex flex-nowrap
+                        md:px-0 md:grid md:grid-cols-3 md:gap-4 md:overflow-x-hidden">
+            
+            {% for class in site.classes limit:3 %}
+        
+            <div class="w-4/5 md:w-auto md:col-span-1 text-center flex-shrink-0 mr-4 md:mr-0">
+                
+                <div class="border-2 p-5p">
+                    <div class="aspect-square relative border-2">
+                    <img src="{{class.image}}" alt="" class="object-cover absolute inset-0 h-full w-full">
+                    </div>
+                    <h4 class="py-4 border-b-2 text-2xl"> {{class.name}} </h4>
+                    <p class="line-clamp-23"> {{class.description}} </p>
+                    <a href="/schedule" class="button mt-2"> Sign up </a>
+                </div>
+
+            </div>
+        
+            {% endfor %}
+            
+            </div>
+    </div>
+
+</section>

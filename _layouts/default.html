@@ -23,19 +23,23 @@
     </nav>
 </header>
 
-<section class="bg-center bg-cover max-w-screen-3xl mx-auto px-5p border-b-2"
-    style="background-image: url('{{page.banner-image}}')">
+<section class="bg-light border-b-2">
 
-    <div class="flex items-center min-h-90">
-        <div>
-            <hr class="border-2 border-b-0 mb-4 -ml-[5vw] w-[60%]">
+    <div class="{{page.background-position}} bg-cover max-w-screen-3xl mx-auto px-5p
+        {% if page.indented-banner == true %} ml-[30vw] {% endif %}"
+        style="background-image: url('{{page.banner-image}}')">
 
-            {% if page.pre-heading %}
-            <h2 class="text-base uppercase tracking-wide font-sans"> {{page.pre-heading}} </h2>
-            {% endif %}
+        <div class="flex items-center min-h-90">
+            <div class="{% if page.indented-banner == true %} -ml-[30vw] {% endif %}">
+                <hr class="border-2 border-b-0 mb-4 -ml-[5vw] w-[60%]">
 
-            <h1 class="mb-0 text-6xl"> {{ page.heading }} </h1>
+                {% if page.pre-heading %}
+                <h2 class="text-base uppercase tracking-wide font-sans"> {{page.pre-heading}} </h2>
+                {% endif %}
 
+                <h1 class="mb-0 text-6xl"> {{ page.heading }} </h1>
+
+            </div>
         </div>
     </div>
 
@@ -47,28 +51,39 @@
 
 
 
+<!---------Footer Banner--------------->
 
+<footer class="bg-copper text-light">
+    <div class="md:grid md:grid-cols-5 gap-10p uppercase px-[5vw] py-6">
 
+        <div class="col-span-1">
+            <a href="#" class="font-serif"> Lorem </a>
+            <p class="text-sm mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
 
+        <div class="col-span-1">
+            <a href="#" class="font-serif"> Lorem </a>
+            <p class="text-sm mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
 
+        <div class="col-span-1">
+            <a href="#" class="font-serif"> Lorem </a>
+            <p class="text-sm mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
 
+        <div class="col-span-2 md:text-right ml-auto mt-[3rem] md:mt-0">
+            <p class="font-serif"> Subscribe to our newsletter </p>
+            <input class="block right bg-copper border border-light">
+            <a class="button bg-light text-copper mt-4"> Subscribe </a>
+        </div>
 
+    </div>
 
+    <div class="border-t-2 border-light">
+        <h3 class="mb-0 px-[5vw] py-2 font-sans text-sm"> Terms of use </h3>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
 
     <script src="/main.js"></script>
 

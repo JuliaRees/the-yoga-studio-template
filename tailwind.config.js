@@ -18,6 +18,7 @@ module.exports = {
       'blue': 'blue',
       'purple': 'purple',
       'teal': 'teal',
+      'black': '#000000',
     },
     extend: {
       spacing: {

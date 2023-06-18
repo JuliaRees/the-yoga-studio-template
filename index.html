@@ -4,6 +4,21 @@ title: Homepage
 banner-image: /images/yoga-studio-1.jpg
 pre-heading: Welcome to
 heading: The Yoga Studio
+indented-banner: false
+background-position: bg-center
+testimonials:
+ - name: Maria
+   description: Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+   image: /images/yoga-studio-4.jpg
+   alt-text: 
+ - name: Sofia
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil.
+   image: /images/yoga-studio-5.jpg
+   alt-text:
+ - name: Filipa
+   description: Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+   image: /images/yoga-studio-6.jpg
+   alt-text:
 seo:
   title: 
   description:
@@ -17,16 +32,16 @@ seo:
 <!---------2-column section--------------->
 
 <section>
-  <div class="md:grid grid-cols-2 min-h-60">
-      <div class="p-[5vw] self-end">
-
+  <div class="md:grid grid-cols-2 min-h-60 md:bg-copper gap-[2px]">
+      <div class="p-[5vw] bg-light flex">
+          <div class="self-end">
           <h2> Duis Arte Irure </h2>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil. </p>
           <a href="/schedule" class="button mt-2"> Sign up </a>
-
+          </div>
       </div>
 
-      <div class="bg-center bg-cover aspect-square md:aspect-auto pb-[75%] m-[5vw] md:m-0 md:border-l-2"
+      <div class="bg-center bg-cover aspect-square md:aspect-auto pb-[75%] m-[5vw] md:m-0"
       style="background-image: url('/images/yoga-studio-2.jpg')">
       </div>
   </div>
@@ -36,17 +51,17 @@ seo:
 <!---------Classes section--------------->
 
 <section>
-  <div class="grid grid-cols-2 border-y-2">
+  <div class="md:grid grid-cols-2 border-y-2 bg-copper gap-[2px]">
 
-    <div class="bg-center bg-cover aspect-square border-r-2" style="background-image: url('/images/yoga-studio-3.jpg')">
-
+    <div class="p-[5vw] bg-center bg-cover aspect-square flex bg-black/30 bg-blend-overlay" style="background-image: url('/images/yoga-studio-3.jpg')">
+      <div class="self-end">
       <h2 class="text-light"> Our Classes </h2>
       <p class="text-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis veniam perferendis dolores quam nisi quia excepturi aliquid sequi labore qui nihil. </p>
       <a href="#" class="button"> Find out more </a>
-
+      </div>  
     </div>
 
-    <div class="grid grid-cols-2 bg-copper gap-[1px]">
+    <div class="grid md:grid-cols-2 bg-copper gap-[1px] ">
 
       {% for class in site.classes limit:4 %}
   
@@ -57,4 +72,36 @@ seo:
     </div>
 
   </div>
+</section>
+
+<!---------Testimonial section--------------->
+
+<section class="p-[5vw]">
+
+  <div class="max-w-screen-lg mx-auto">
+    <div class="px-5p md:px-0">
+      <h2> Testimonials </h2>
+    </div>
+
+    <!-------First line is the mobile styles, second line is the desktop style------>
+    <div class="px-5p overflow-x-scroll flex flex-nowrap
+                md:px-0 md:grid md:grid-cols-3 md:gap-4 md:overflow-x-hidden">
+    
+    {% for testimonials in page.testimonials limit:3 %}
+
+    <div class="w-4/5 md:w-auto md:col-span-1 text-center flex-shrink-0 mr-4 md:mr-0">
+        
+        <div class="aspect-square relative border-2">
+          <img src="{{testimonials.image}}" alt="" class="object-cover absolute inset-0 h-full w-full">
+        </div>
+        <h4 class="py-4 border-b-2 text-2xl"> {{testimonials.name}} </h4>
+        <p class="line-clamp-23"> {{testimonials.description}} </p>
+        
+    </div>
+
+    {% endfor %}
+    
+    </div>
+  </div>
+
 </section>
