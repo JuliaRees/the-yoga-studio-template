@@ -753,6 +753,83 @@ nav a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+
+/* Styling the headings */
+#momence-embed #momence-plugin-host-schedule h4 {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}    
+
+/* Hide featured image */
+#momence-embed #momence-plugin-host-schedule .jQbyba {
+    display: none;
+}
+
+/* Styling the button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+
+/* Hiding the author */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+    display: none;
+}
+
+/* Hiding the word class */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+    display: none;
+}
+
+/* Hiding the description */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-description {
+    display: none;
+}
+
+/* Background in general */
+#momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+/* Boxes around arrows */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+  border-style: none;
+}
+
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+  font-family: Oranienbaum, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Powered by button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+    display: none;
+}
+
+/* Line under number at the bottom */
+#momence-embed #momence-plugin-host-schedule .momence-pagination-button::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -793,9 +870,6 @@ nav a {
   .md\:gap-4 {
     gap: 1rem;
   }
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
   .md\:overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -817,5 +891,3 @@ nav a {
     text-align: right;
   }
 }
-
-
