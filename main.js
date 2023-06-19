@@ -33,7 +33,6 @@ function toggleBurgerMenu() {
     // opens up the burger menu and does the opsite of the close
     gsap.to(burgerMenu, {
         width: "auto",
-        height: "auto",
         padding: '3px 1.5rem'
     })
   }
