@@ -65,7 +65,7 @@
     }
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-copper text-light ;
+        @apply inline-block px-4 py-2 uppercase tracking-wide bg-copper text-light border hover:bg-light hover:border-copper hover:text-copper;
     }
     
 }
