@@ -475,6 +475,39 @@ nav a {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+@media (min-width: 2000px) {
+  .container {
+    max-width: 2000px;
+  }
+}
 .button {
   display: inline-block;
   border-width: 1px;
@@ -512,8 +545,23 @@ nav a {
 .right-0 {
   right: 0px;
 }
+.right-12 {
+  right: 3rem;
+}
+.right-5p {
+  right: 5%;
+}
+.right-6 {
+  right: 1.5rem;
+}
 .top-0 {
   top: 0px;
+}
+.top-\[5vh\] {
+  top: 5vh;
+}
+.top-\[8rem\] {
+  top: 8rem;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
@@ -570,6 +618,12 @@ nav a {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-0 {
+  height: 0px;
+}
+.h-12 {
+  height: 3rem;
+}
 .h-full {
   height: 100%;
 }
@@ -578,6 +632,12 @@ nav a {
 }
 .min-h-90 {
   min-height: 90vh;
+}
+.w-0 {
+  width: 0px;
+}
+.w-12 {
+  width: 3rem;
 }
 .w-4\/5 {
   width: 80%;
@@ -599,6 +659,12 @@ nav a {
 }
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -627,8 +693,21 @@ nav a {
 .self-end {
   align-self: flex-end;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-l-3xl {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 .border {
   border-width: 1px;
@@ -699,6 +778,10 @@ nav a {
 }
 .p-\[5vw\] {
   padding: 5vw;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .px-5p {
   padding-left: 5%;
@@ -906,6 +989,9 @@ nav a {
   .md\:absolute {
     position: absolute;
   }
+  .md\:top-8 {
+    top: 2rem;
+  }
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -923,6 +1009,9 @@ nav a {
   }
   .md\:grid {
     display: grid;
+  }
+  .md\:hidden {
+    display: none;
   }
   .md\:aspect-auto {
     aspect-ratio: auto;
