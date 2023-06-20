@@ -310,27 +310,11 @@ video {
 [hidden] {
   display: none;
 }
-html {
-  border-width: 8px;
-}
-@media (min-width: 640px) {
-  html {
-    --tw-border-opacity: 1;
-    border-color: rgb(0 0 255 / var(--tw-border-opacity));
-  }
-}
-@media (min-width: 768px) {
-  html {
-    --tw-border-opacity: 1;
-    border-color: rgb(128 0 128 / var(--tw-border-opacity));
-  }
-}
-@media (min-width: 1024px) {
-  html {
-    --tw-border-opacity: 1;
-    border-color: rgb(0 128 128 / var(--tw-border-opacity));
-  }
-}
+/*
+    html {
+        @apply border-8 sm:border-blue md:border-purple lg:border-teal;
+    }
+    */
 /*
     div, nav, header, section {
         border: 1px solid white;
